@@ -1,0 +1,24 @@
+[push]
+    default = simple
+[core]
+    editor = vim
+#   sshCommand = ssh -i ~/.ssh/$(git config --local --get user.email)_id_rsa
+[alias]
+    up = pull  --tags --prune --prune-tags
+    uf = fetch --tags --prune --prune-tags
+    co = checkout
+    br = branch
+    ci = commit
+    cp = cherry-pick
+    sh = show
+    st = status
+    ls = ls-files
+    lg = log --graph --decorate -n 10 --oneline
+    la = log --graph --decorate -n 10 --oneline --all
+    ll = log --graph --decorate -n 3
+[user]
+#   name = John Doe
+#   email = john.doe@example.com
+#   signingkey =
+[commit]
+#   gpgsign = true
